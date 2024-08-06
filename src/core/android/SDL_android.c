@@ -505,11 +505,13 @@ static void Android_JNI_CreateKey_once(void)
 
 static void register_methods(JNIEnv *env, const char *classname, JNINativeMethod *methods, int nb)
 {
+    /*
     jclass clazz = (*env)->FindClass(env, classname);
     if (!clazz || (*env)->RegisterNatives(env, clazz, methods, nb) < 0) {
         __android_log_print(ANDROID_LOG_ERROR, "SDL", "Failed to register methods of %s", classname);
         return;
     }
+    */
 }
 
 /* Library init */

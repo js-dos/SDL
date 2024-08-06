@@ -109,6 +109,7 @@ SDL_NORETURN void SDL_ExitProcess(int exitcode)
 }
 
 /* The initialized subsystems */
+#undef SDL_MAIN_NEEDED
 #ifdef SDL_MAIN_NEEDED
 static SDL_bool SDL_MainIsReady = SDL_FALSE;
 #else
